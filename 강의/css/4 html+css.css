@@ -1,0 +1,41 @@
+
+.container{
+  width: 400px;
+  height: 500px;
+  background: royalblue;
+  display: flex;
+  flex-wrap: wrap;
+  /* 수평으로 정렬하다가 벗어나는 요소는 밑으로 배열 */
+  /* 기본은 no-wrap -> 요소를 줄여서 한줄로 수평 배열 */
+  justify-content: center;
+  /* 주축 정렬 */
+  /* align-content: center; */
+  /* 교차축 여러줄 정렬->사용이 많지 않음 */
+  align-items: center;
+  /* 교차축 한줄 정렬->사용이 많지 않음 */
+
+}
+
+.container .item{
+  width: 100px;
+  height: 100px;
+  border: 3px dashed red;
+  background-color: orange;
+  flex-grow: 1;
+  /* grow 기본값 0 */
+  flex-shrink: 0;
+  /* shrink 기본값 1 */
+  flex-basis: 0;
+  /* 기본 넓이 */
+}
+
+
+.container .item:nth-child(1){
+  
+}
+.container .item:nth-child(2){
+  
+}
+.container .item:nth-child(3){
+  flex-grow:2;
+}
